@@ -62,6 +62,9 @@ function start(){
 				function(error){
 					if (error) throw err;
 					console.log("Your order was place successfully!")
+				var purchaseTotal = chosenItem.price * answer.order;
+					console.log("Your purchase cost is $"+ purchaseTotal);
+
 				}//closes function
 				)//closes connection.query
 		}//closes if statement
